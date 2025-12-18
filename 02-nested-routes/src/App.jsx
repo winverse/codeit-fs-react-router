@@ -2,10 +2,11 @@ import { Routes, Route, Link } from 'react-router';
 import { HomePage } from './features/home/HomePage';
 import { AboutPage } from './features/about/AboutPage';
 import { ContactPage } from './features/contact/ContactPage';
+import styles from './App.module.css';
 
 export function App() {
   return (
-    <div>
+    <div className={styles.app}>
       <header>
         <nav>
           <Link to="/">홈</Link>
