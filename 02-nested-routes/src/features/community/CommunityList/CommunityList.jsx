@@ -1,6 +1,6 @@
-import styles from './CommunityPage.module.css';
+import styles from './CommunityList.module.css';
 
-export function CommunityPage() {
+export function CommunityList() {
   return (
     <div className={styles.page}>
       <h3>커뮤니티 글 목록</h3>

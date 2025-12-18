@@ -1,5 +1,6 @@
 /* Shared page styling using CSS nesting */
 .page {
+  margin-top: 20px;
   text-align: center; /* 가운데 정렬 */
 
   h1,
