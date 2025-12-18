@@ -1,7 +1,7 @@
 import { Routes, Route, Link } from 'react-router';
-import { HomePage } from './pages/HomePage';
-import { AboutPage } from './pages/AboutPage';
 import styles from './App.module.css';
+import { HomePage } from './features/home/HomePage';
+import { AboutPage } from './features/about/AboutPage';
 
 export function App() {
   return (
