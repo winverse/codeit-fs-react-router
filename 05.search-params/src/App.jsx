@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router';
-import { SearchPage } from './pages/Search';
+import { Search } from './pages/Search';
 
 export function App() {
   return (
     <Routes>
-      <Route path="/" element={<SearchPage />} />
+      <Route path="/" element={<Search />} />
     </Routes>
   );
 }

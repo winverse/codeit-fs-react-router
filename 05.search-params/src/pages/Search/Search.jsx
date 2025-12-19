@@ -13,16 +13,23 @@ export function Search() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const formData = new FormData(event.target);
+    const searchQuery = formData.get('q');
+    const nextParams = {};
+
+    if (searchQuery) {
+      nextParams.q = searchQuery;
+    }
   };
 
-  const handleSort = (sortType) => {};
+  const handleSort = (sort) => {};
 
   const filteredQuestions = [];
 
   return (
     <div className={styles.page}>
       <h2>질문 검색</h2>
-      <form onSubmit={(event) => handleSubmit(event)}>
+      <form onSubmit={handleSubmit}>
         <input type="search" name="q" defaultValue={query || ''} />
         <button type="submit">검색</button>
       </form>
